@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background: linear-gradient(to right, #001a0f, #001112);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 100%;
+    padding: 28px;
+    margin: 137px auto;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 37px 0px rgba(0, 0, 0, 1);
+    border-radius: 7px;
+    color: #fff
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.addForm,
+.editForm {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editInput {
+    display: none;
+}
+
+.addForm input,
+.editForm input {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 0px;
+    padding: 0 20px 0 20px;
+    border: 0;
+}
+
+.taskbutton,
+.editButton {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 0px;
+    letter-spacing: 0.3px;
+    transition: transform 0.25s ease;
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+
+
+.taskBox {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.taskBox.overflow {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.taskBox .task {
+    font-size: 16px;
+    border-bottom: 1px solid #283e40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskBox .task:last-child {
+    margin-bottom: 0;
+    /* border-bottom: 0; */
+    padding-bottom: 0;
+}
